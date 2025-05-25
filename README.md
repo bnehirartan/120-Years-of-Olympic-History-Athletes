@@ -50,8 +50,8 @@ Model Evaluation (F1-score - 5-fold cross validation):
 - Random Forest: 0.4452
 - Naive Bayes: 0.0645
 
-- The **Decision Tree Classifier** gave the best F1-score.
-- Applied **GridSearchCV** for hyperparameter tuning.
+The **Decision Tree Classifier** gave the best F1-score.
+Applied **GridSearchCV** for hyperparameter tuning.
 
 ```python
 # Best Parameters
