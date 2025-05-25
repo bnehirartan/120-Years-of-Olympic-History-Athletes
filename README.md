@@ -32,15 +32,26 @@ The dataset used was the [**120 Years of Olympic History: Athletes and Results**
 
 ### 🔍 Models Evaluated
 - Logistic Regression
-- Decision Tree
+- Decision Tree ✅ *(Selected)*
 - Naive Bayes
-- Random Forest ✅ *(Selected)*
+- Random Forest 
 
 ### 📈 Model Selection & Tuning
-Using 5-fold **Stratified Cross-Validation** and **F1-score** as the main metric due to class imbalance (~14.6% medal winners):
+Using 5-fold **Stratified Cross-Validation** and **F1-score** as the main metric due to class imbalance.
 
-- The **Random Forest Classifier** gave the best F1-score
-- Applied **GridSearchCV** for hyperparameter tuning
+📉 **Class Imbalance Note**:
+- Only **~14.6%** of the athletes in the dataset won a medal.
+- This makes it an imbalanced classification task, where precision, recall, and F1-score are more meaningful than raw accuracy.
+- 
+Model Evaluation (F1-score - 5-fold cross validation):
+
+Logistic Regression: 0.0008
+Decision Tree: 0.5175
+Random Forest: 0.4452
+Naive Bayes: 0.0645
+
+- The **Decision Tree Classifier** gave the best F1-score.
+- Applied **GridSearchCV** for hyperparameter tuning.
 
 ```python
 # Best Parameters
