@@ -109,5 +109,5 @@ Cluster 0 reflected a high-performance profile, physically dominant athletes in 
 
 🔗 Links
 
-Kaggle Notebook: 
+Kaggle Notebook: https://www.kaggle.com/code/basaknehirartan/notebook74340dfb86
 
