@@ -56,3 +56,58 @@ Applied **GridSearchCV** for hyperparameter tuning.
 ```python
 # Best Parameters
 {'max_depth': None, 'min_samples_split': 10}
+
+```
+---
+
+## 🔍 Unsupervised Learning Workflow
+
+### Objective
+Explore the athlete space using K-Means Clustering to see if we can discover meaningful groupings without using the Medal_Won label.
+
+### ⚙️ Methods:
+- Applied KMeans (k=4) on scaled and encoded data
+
+- Used PCA (Principal Component Analysis) to reduce features to 2D
+
+- Visualized clusters and compared them with Medal_Won using crosstabs
+
+### 📊 Insights from Cluster 0:
+- Had the highest medal-winning ratio (~16.6%)
+
+- Dominated by athletes from historically successful Olympic nations (e.g., USA, Italy, Germany)
+
+- Most frequent sports: Swimming, Rowing, Wrestling
+
+- Taller, heavier, and older on average
+
+- Strong male skew (~95% male)
+
+Cluster 0 reflected a high-performance profile, physically dominant athletes in medal-dense sports from top national teams.
+
+---
+🌍 Real-World Applications
+
+- 🎯 Talent scouting based on physical and historical attributes
+
+- 🏅 Performance forecasting for federations and training institutions
+
+- 📊 Exploratory analysis in sports journalism and analytics
+
+---
+🚀 Future Work
+
+- Address class imbalance using SMOTE or class weights
+
+- Deploy the model with a simple Gradio or Streamlit interface
+
+- Add external features (e.g., training background, injuries, world rankings)
+
+- Expand clustering with DBSCAN or hierarchical methods
+
+---
+
+🔗 Links
+
+Kaggle Notebook: 
+
